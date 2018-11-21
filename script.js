@@ -30,7 +30,6 @@ function IniciarCronometro(valor){
 			document.getElementById('btnIniciar').disabled = true;
 			document.getElementById('btnResetar').disabled = false;
 			document.getElementById('btnPausar').disabled = false;
-			document.getElementById('btnAtivar').disabled = true;
 			this.minuto = document.getElementById('min').value;
 			this.segundo = document.getElementById('seg').value;
 			
