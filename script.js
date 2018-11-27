@@ -7,6 +7,32 @@ var contador = null;
 var minuto = 0;
 var segundo = 0;
 
+$("#btnIniciar").click(function(){
+				//Capatura os valores de tempo.
+				var min = parseInt($('#min').val());
+				var seg = parseInt($('#seg').val());
+				var timeInterval = new Number;
+				timeInterval = 0;
+				if (min > 0 && seg == 0){
+					timeInterval = (min * 60000);
+				}else if (min == 0 && seg > 0){
+					timeInterval = (seg * 1000);
+				}else if (min > 0 && seg > 0){
+					timeInterval = ((min * 60000)+(seg * 100));
+				}else{
+					alert("Erro de registro");
+				}
+				//Aciona o gatilho de acordo o tempo especificado nos campos.
+				var norepeat = setInterval(function() {
+				$("#btnAtivar").trigger('click');
+				}, timeInterval + 1000);
+				
+				$("#btnPausar").click(function(){
+					clearInterval(norepeat);
+				});
+			});
+
+
 function IniciarCronometro(valor){
 	this.evento = valor;
 	this.configMinuto = document.getElementById('min').value;
