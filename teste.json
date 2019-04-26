@@ -1,0 +1,26 @@
+[
+   {
+      "Patientage": 29,
+      "Patientname": "Moran",
+      "Drugs": [
+         {
+            "DrugName": "Dolo",
+            "Dosage": "150 mg daily",
+            "MedicationDuration": "3 years",
+            "MedicationType": "Current"
+         },
+         {
+            "DrugName": "Paracetamol",
+            "Dosage": "200 mg daily",
+            "MedicationDuration": "2.5 years",
+            "MedicationType": "Current"
+         }
+      ],
+      "Reactions": [
+         {
+            "Start Date": "10-10-2017",
+            "End Date": "15-10-2017"
+         }
+      ]
+   }
+]
