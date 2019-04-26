@@ -1,18 +1,24 @@
 [
    {
-      "Patientage": 29,
-      "Patientname": "Moran",
+      "PatientAge": 29,
+      "PatientName": "Moran",
       "Drugs": [
          {
             "DrugName": "Dolo",
-            "Dosage": "150 mg daily",
+            "Dosage": "150mg daily",
             "MedicationDuration": "3 years",
             "MedicationType": "Current"
          },
          {
-            "DrugName": "Paracetamol",
-            "Dosage": "200 mg daily",
+            "DrugName": "Paracentamol",
+            "Dosage": "200mg daily",
             "MedicationDuration": "2.5 years",
+            "MedicationType": "Current"
+         },
+         {
+            "DrugName": "Dipirona",
+            "Dosage": "150mg daily",
+            "MedicationDuration": "2 years",
             "MedicationType": "Current"
          }
       ],
